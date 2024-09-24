@@ -1,0 +1,18 @@
+<div class="welcome-container">
+    <h2>Bienvenido</h2>
+
+    <% if (user) { %>
+        <p>Hola <%= user.username %>!</p>
+        <div class="buttons-home-container">
+            <a href="/protected" class="btn">Ir al área protegida</a>
+            <a href="/logout" class="btn">Cerrar sesión</a>
+        </div>
+        <% } else { %>
+            <p>No has iniciado sesión.</p>
+            <div class="buttons-home-container">
+                <a href="/login" class="btn">Iniciar sesión</a>
+                <a href="/register" class="btn">Registrarse</a>
+            </div>
+
+            <% } %>
+</div>

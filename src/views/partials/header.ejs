@@ -1,0 +1,72 @@
+<!-- header.ejs -->
+<header>
+    <h1><a href="/">My Login App</a></h1>
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about">Acerca de</a></li>
+            <li><a href="/contact">Contacto</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="/login" class="btn">Iniciar Sesión</a>
+            <a href="/register" class="btn">Registrarse</a>
+        </div>
+    </nav>
+</header>
+
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    header h1 a {
+
+        text-decoration: none;
+        color: #000;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .auth-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn {
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        color: #007bff;
+        transition: background-color 0.3s, color 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+</style>
